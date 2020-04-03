@@ -1,0 +1,23 @@
+.item1 { grid-area: row1-1; }
+.item2 { grid-area: row1-2; }
+.item3 { grid-area: row1-3; }
+.item4 { grid-area: row2-1; }
+.item5 { grid-area: row2-2; }
+.item6 { grid-area: row2-3; }
+
+.grid-container {
+  margin: auto;
+  width: 100% ;
+  display: grid;
+  grid-template-areas:
+    'row1-1 row1-2 row1-3'
+    'row2-1 row2-2 row2-3';
+  grid-gap: 5px;
+  padding: 10px;
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
